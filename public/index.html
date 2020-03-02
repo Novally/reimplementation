@@ -1,0 +1,1077 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="A fully featured admin theme which can be used to build CRM, CMS, etc.">
+  
+    <!-- Libs CSS -->
+    <link rel="stylesheet" href="Course%20Overview%20-%20CPSC1234%20Software%20Security%20-%20Sectry_files/flatpickr.css">
+    <link rel="stylesheet" href="Course%20Overview%20-%20CPSC1234%20Software%20Security%20-%20Sectry_files/quill.css">
+    <link rel="stylesheet" href="Course%20Overview%20-%20CPSC1234%20Software%20Security%20-%20Sectry_files/select2.css">
+    <link rel="stylesheet" href="Course%20Overview%20-%20CPSC1234%20Software%20Security%20-%20Sectry_files/vs2015.css">
+    <link rel="stylesheet" href="Course%20Overview%20-%20CPSC1234%20Software%20Security%20-%20Sectry_files/timesheet-white.css">
+  
+    <!-- Map -->
+    <link href="Course%20Overview%20-%20CPSC1234%20Software%20Security%20-%20Sectry_files/mapbox-gl.css" rel="stylesheet">
+  
+    <!-- Theme CSS -->
+    
+    <link rel="stylesheet" href="Course%20Overview%20-%20CPSC1234%20Software%20Security%20-%20Sectry_files/theme.css">
+     
+  
+    <title>Course Overview - CPSC1234 Software Security - Sectry</title>
+
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>React App</title>
+  </head>
+
+    <body>
+      <div id="root"></div>
+      <!-- NAVIGATION
+        ================================================== -->
+      <nav class="navbar navbar-expand-lg navbar-light" id="topnav">
+        <div class="container">
+    
+          <!-- Toggler -->
+          <button class="navbar-toggler mr-auto" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+    
+          <!-- Brand -->
+          <a class="navbar-brand text-primary mr-auto mr-lg-4 order-lg-0" href="https://sectry.nexuslab.dev/index.html">
+            Sectry
+            <!-- <img src="./assets/img/logo.svg" alt="..." class="navbar-brand-img"> -->
+          </a>
+    
+          <!-- Form -->
+          <form class="form-inline mr-4 d-none d-lg-flex order-lg-2">
+            <div class="input-group input-group-rounded input-group-merge">
+    
+              <!-- Input -->
+              <input type="search" class="form-control form-control-prepended  dropdown-toggle search" data-toggle="dropdown" placeholder="Search" aria-label="Search">
+              <div class="input-group-prepend">
+                <div class="input-group-text">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                </div>
+              </div>
+            </div>
+          </form>
+    
+          <!-- User -->
+          <div class="navbar-user order-lg-3">
+    
+            <div class="mr-4 d-none d-lg-flex">
+    
+              <!-- Toggle -->
+              <a href="https://sectry.nexuslab.dev/messages.html" class="navbar-user-link" role="button" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="You have new messages">
+                <span class="icon danger">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-inbox"><polyline points="22 12 16 12 14 15 10 15 8 12 2 12"></polyline><path d="M5.45 5.11L2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"></path></svg>
+                </span>
+              </a>
+    
+            </div>
+    
+            <!-- Dropdown -->
+            <div class="dropdown">
+    
+              <!-- Toggle -->
+              <a href="#" class="avatar avatar-sm dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <img src="reimplementation/public/course_details/Course Overview - CPSC1234 Software Security - Sectry_files/avatar-1.jpg" alt="..." class="avatar-img rounded-circle">
+              </a>
+    
+              <!-- Menu -->
+              <div class="dropdown-menu dropdown-menu-right" style="min-width:200px;">
+                <a href="https://sectry.nexuslab.dev/messages.html" class="dropdown-item d-lg-none">
+                  <span class="icon danger align-middle mr-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-inbox"><polyline points="22 12 16 12 14 15 10 15 8 12 2 12"></polyline><path d="M5.45 5.11L2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"></path></svg>
+                  </span>
+                  <span class="align-middle">Inbox</span>
+                </a>
+                <a href="https://sectry.nexuslab.dev/settings.html" class="dropdown-item">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-settings align-middle mr-2"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+                  <span class="align-middle">Settings</span>
+                </a>
+                <hr class="dropdown-divider">
+                <h6 class="dropdown-header text-muted">Administrator</h6>
+                <a class="dropdown-item" href="https://sectry.nexuslab.dev/admin-dashboard.html">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home align-middle mr-2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+                  <span class="align-middle">Dashboard</span>
+                </a>
+                <a class="dropdown-item" href="https://sectry.nexuslab.dev/admin-users.html">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-users align-middle mr-2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                  <span class="align-middle">Users</span>
+                </a>
+                <a class="dropdown-item" href="https://sectry.nexuslab.dev/admin-courses.html">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-book align-middle mr-2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+                  <span class="align-middle">Courses</span>
+                </a>
+                <a class="dropdown-item" href="https://sectry.nexuslab.dev/admin-labs.html">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tool align-middle mr-2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+                  <span class="align-middle">Labs</span>
+                </a>
+                <a class="dropdown-item" href="https://sectry.nexuslab.dev/admin-clouds.html">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-cloud align-middle mr-2"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path></svg>
+                  <span class="align-middle">Clouds</span>
+                </a>
+                <a class="dropdown-item" href="https://sectry.nexuslab.dev/admin-access.html">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-key align-middle mr-2"><path d="M21 2l-2 2m-7.61 7.61a5.5 5.5 0 1 1-7.778 7.778 5.5 5.5 0 0 1 7.777-7.777zm0 0L15.5 7.5m0 0l3 3L22 7l-3-3m-3.5 3.5L19 4"></path></svg>
+                  <span class="align-middle">Access Control</span>
+                </a>
+                <hr class="dropdown-divider">
+                <a href="https://sectry.nexuslab.dev/docs.html" class="dropdown-item">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text align-middle mr-2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg><span class="align-middle">Docs</span>
+                </a>
+                <hr class="dropdown-divider">
+                <a href="https://sectry.nexuslab.dev/sign-in.html" class="dropdown-item">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-log-out align-middle mr-2"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path><polyline points="16 17 21 12 16 7"></polyline><line x1="21" y1="12" x2="9" y2="12"></line></svg><span class="align-middle">Logout</span>
+                </a>
+              </div>
+    
+            </div>
+    
+          </div>
+    
+          <!-- Collapse -->
+          <div class="collapse navbar-collapse mr-auto order-md-12 order-lg-1" id="navbar">
+    
+            <!-- Form -->
+            <form class="mt-4 mb-3 d-md-none">
+              <input type="search" class="form-control form-control-rounded" placeholder="Search" aria-label="Search">
+            </form>
+    
+            <!-- Navigation -->
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="nav-link " href="https://sectry.nexuslab.dev/index.html" role="button" aria-haspopup="true" aria-expanded="false">
+                  Feed
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="https://sectry.nexuslab.dev/courses.html" role="button" aria-haspopup="true" aria-expanded="false">
+                  Courses
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="https://sectry.nexuslab.dev/labs.html" role="button" aria-haspopup="true" aria-expanded="false">
+                  Labs
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="https://sectry.nexuslab.dev/help.html" role="button" aria-haspopup="true" aria-expanded="false">
+                  Help
+                </a>
+              </li>
+            </ul>
+    
+          </div>
+    
+        </div> <!-- / .container -->
+      </nav>
+    
+      <!-- MAIN CONTENT
+        ================================================== -->
+      <div class="main-content">
+    
+        <div class="container">
+          <!-- HEADER -->
+          <div class="header">
+    
+            <!-- Body -->
+            <div class="header-body">
+              <div class="row align-items-center">
+                <div class="col-auto">
+    
+                  <!-- Avatar -->
+                  <div class="avatar avatar-lg avatar-4by3">
+                    <img src="Course%20Overview%20-%20CPSC1234%20Software%20Security%20-%20Sectry_files/labs_software.jpg" alt="..." class="avatar-img rounded">
+                    <!-- Course%20Overview%20-%20CPSC1234%20Software%20Security%20-%20Sectry_files/labs_software -->
+                  </div>
+    
+                </div>
+                <div class="col ml-n3 ml-md-n2">
+    
+                  <!-- Pretitle -->
+                  <h6 class="header-pretitle">
+                    CPSC1234
+                  </h6>
+    
+                  <!-- Title -->
+                  <h1 class="header-title">
+                    Software Security
+                  </h1>
+    
+                </div>
+                <div class="col-12 col-md-auto mt-3 mt-md-0">
+                  <a href="https://sectry.nexuslab.dev/course-edit.html" class="btn btn-outline-secondary btn-block">Edit Course</a>
+                </div>
+              </div> <!-- / .row -->
+              <div class="row align-items-center">
+                <div class="col">
+    
+                  <!-- Nav -->
+                  <ul class="nav nav-tabs nav-overflow header-tabs">
+                    <li class="nav-item">
+                      <a href="https://sectry.nexuslab.dev/course-overview.html" class="nav-link active">
+                        Overview
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="https://sectry.nexuslab.dev/course-labs.html" class="nav-link">
+                        Labs
+                        <span class="badge badge-pill badge-soft-secondary">5</span>
+                      </a>
+                    </li>
+                  </ul>
+    
+                </div>
+              </div>
+            </div>
+    
+          </div> <!-- / .header -->
+    
+          <!-- CONTENT -->
+          <div class="row">
+            <div class="col-12 col-lg-7 col-xl-8">
+    
+              <div class="card">
+                <div class="card-body">
+    
+                  <!-- Form -->
+                  <form>
+                    <div class="form-group">
+                      <input type="text" class="form-control form-control-flush form-control-auto" placeholder="Subject">
+                      <hr>
+                      <textarea class="form-control form-control-flush form-control-auto" data-toggle="autosize" rows="3" placeholder="Start an announcement..." style="overflow: hidden; overflow-wrap: break-word; height: 69.3333px;"></textarea>
+                    </div>
+                  </form>
+    
+                  <!-- Footer -->
+                  <div class="row align-items-center">
+                    <div class="col">
+    
+                      <!-- Symbols -->
+                      <small class="text-muted">
+                        0/500
+                      </small>
+    
+                    </div>
+                    <div class="col-auto">
+    
+                      <!-- Icons -->
+                      <div class="text-muted">
+                        <a class="text-reset mr-3" href="#!" data-toggle="tooltip" title="" data-original-title="Add photo">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-camera"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle></svg>
+                        </a>
+                        <a class="text-reset mr-3" href="#!" data-toggle="tooltip" title="" data-original-title="Attach file">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-paperclip"><path d="M21.44 11.05l-9.19 9.19a6 6 0 0 1-8.49-8.49l9.19-9.19a4 4 0 0 1 5.66 5.66l-9.2 9.19a2 2 0 0 1-2.83-2.83l8.49-8.48"></path></svg>
+                        </a>
+                        <a class="text-reset" href="#!" data-toggle="tooltip" title="" data-original-title="Record audio">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mic"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"></path><path d="M19 10v2a7 7 0 0 1-14 0v-2"></path><line x1="12" y1="19" x2="12" y2="23"></line><line x1="8" y1="23" x2="16" y2="23"></line></svg>
+                        </a>
+                      </div>
+    
+                    </div>
+                    <div class="col-auto">
+                      <button class="btn btn-primary btn-sm">Post</button>
+                    </div>
+                  </div>
+    
+                </div>
+              </div>
+    
+              <div class="card">
+                <div class="card-body">
+    
+                  <h3 class="card-title">
+                    First project!
+                  </h3>
+    
+                  <!-- Text -->
+                  <p class="card-text">
+    
+                    Check your emails! First project was emailed to you with the details. Let me know if you have any
+                    questions. See you on Monday.
+    
+                  </p>
+    
+                  <!-- Header -->
+                  <div class="row align-items-center">
+                    <div class="col-auto">
+    
+                      <!-- Avatar -->
+                      <a href="#!" class="avatar avatar-xs">
+                        <img src="reimplementation/public/course_details/Course Overview - CPSC1234 Software Security - Sectry_files/avatar-2.jpg" alt="..." class="avatar-img rounded-circle">
+                      </a>
+    
+                    </div>
+                    <div class="col ml-n3">
+                      <small>Ab Hadley</small>
+                    </div>
+                    <div class="col-auto">
+                      <!-- Time -->
+                      <span class="small text-muted">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock align-middle">
+                          <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg> 
+                          <time class="align-middle" datetime="2018-05-24">4 hour ago</time>
+                      </span>
+                    </div>
+                    <div class="col-auto">
+    
+                      <!-- Dropdown -->
+                      <div class="dropdown">
+                        <a href="#" class="dropdown-ellipses dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-vertical">
+                            <circle cx="12" cy="12" r="1"></circle><circle cx="12" cy="5" r="1"></circle><circle cx="12" cy="19" r="1"></circle></svg>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right">
+                          <a href="#!" class="dropdown-item">
+                            Edit
+                          </a>
+                          <a href="#!" class="dropdown-item text-danger">
+                            Delete
+                          </a>
+                        </div>
+                      </div>
+    
+                    </div>
+                  </div> <!-- / .row -->
+    
+                </div>
+              </div>
+    
+              <div class="card">
+                <div class="card-body">
+    
+                  <h3 class="card-title">
+                    Lab 4 posted
+                  </h3>
+    
+                  <!-- Text -->
+                  <p class="card-text">
+    
+                    I have posted lab 4 on Sectry. Due before Spring break. Email me if you have any questions.
+    
+                  </p>
+    
+                  <!-- Header -->
+                  <div class="row align-items-center">
+                    <div class="col-auto">
+
+                      <!-- Avatar -->
+                      <a href="#!" class="avatar avatar-xs">
+                        <img src="Course%20Overview%20-%20CPSC1234%20Software%20Security%20-%20Sectry_files/avatar-2.jpg" alt="..." class="avatar-img rounded-circle">
+                      </a>
+    
+                    </div>
+                    <div class="col ml-n3">
+                      <small>Ab Hadley</small>
+                    </div>
+                    <div class="col-auto">
+                      <!-- Time -->
+                      <span class="small text-muted">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock align-middle"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg> <time class="align-middle" datetime="2018-05-24">1 week ago</time>
+                      </span>
+                    </div>
+                    <div class="col-auto">
+    
+                      <!-- Dropdown -->
+                      <div class="dropdown">
+                        <a href="#" class="dropdown-ellipses dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-vertical"><circle cx="12" cy="12" r="1"></circle><circle cx="12" cy="5" r="1"></circle><circle cx="12" cy="19" r="1"></circle></svg>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right">
+                          <a href="#!" class="dropdown-item">
+                            Edit
+                          </a>
+                          <a href="#!" class="dropdown-item text-danger">
+                            Delete
+                          </a>
+                        </div>
+                      </div>
+    
+                    </div>
+                  </div> <!-- / .row -->
+    
+                </div>
+              </div>
+    
+              <div class="card card-inactive">
+                <div class="card-body text-center">
+                  <div class="row justify-content-center">
+                    <div class="col-12 col-md-10 col-xl-8">
+    
+                      <!-- Image -->
+                      <img src="Course%20Overview%20-%20CPSC1234%20Software%20Security%20-%20Sectry_files/empty-content.png" alt="..." class="img-fluid mb-4 mt-n4">
+
+                      <!-- Title -->
+                      <h2 class="mb-5">
+                        No announcements posted.
+                      </h2>
+    
+                    </div>
+                  </div> <!-- / .row -->
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-5 col-xl-4">
+    
+              <!-- Card -->
+              <div class="card">
+                <div class="card-body">
+                  <h6 class="card-title text-uppercase text-muted mb-2">
+                    Description
+                  </h6>
+                  <p class="card-text">
+                    Network intrusion detection is a critical component of network defense.
+                    Through effective network intrusion detection, malicious activities and policy violations can be
+                    monitored and detected.
+                    In this lab, students will learn how to conduct network intrusion detection using two popular
+                    open-source NIDS.
+                  </p>
+                </div>
+              </div>
+    
+              <!-- Card -->
+              <div class="card">
+                <div class="card-body">
+                  <div class="row align-items-center mb-3">
+                    <div class="col">
+    
+                      <!-- Title -->
+                      <h6 class="card-title text-uppercase text-muted mb-2">
+                        Level
+                      </h6>
+    
+                      <!-- Heading -->
+                      <span class="h2 mb-0">
+                        Undergraduate
+                      </span>
+    
+                    </div>
+                    <div class="col-auto">
+    
+                      <!-- Icon -->
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-layers h2 text-muted mb-0"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+    
+                    </div>
+                  </div> <!-- / .row -->
+    
+                  <div class="row align-items-center mb-3">
+                    <div class="col">
+    
+                      <!-- Title -->
+                      <h6 class="card-title text-uppercase text-muted mb-2">
+                        Difficulty
+                      </h6>
+    
+                      <!-- Heading -->
+                      <span class="h2 mb-0">
+                        Easy
+                      </span>
+    
+                    </div>
+                    <div class="col-auto">
+    
+                      <!-- Icon -->
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity h2 text-muted mb-0"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+    
+                    </div>
+                  </div> <!-- / .row -->
+    
+                  <div class="row align-items-center">
+                    <div class="col">
+    
+                      <!-- Title -->
+                      <h6 class="card-title text-uppercase text-muted mb-2">
+                        Est. Hours
+                      </h6>
+    
+                      <div class="row align-items-center no-gutters">
+                        <div class="col-auto">
+    
+                          <!-- Heading -->
+                          <span class="h2 mr-2 mb-0">
+                            20
+                          </span>
+    
+                        </div>
+                      </div> <!-- / .row -->
+    
+                    </div>
+                    <div class="col-auto">
+    
+                      <!-- Icon -->
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock h2 text-muted mb-0"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+    
+                    </div>
+                  </div> <!-- / .row -->
+    
+                </div>
+              </div>
+    
+              <div class="card">
+                <div class="card-header">
+                  <div class="row align-items-center">
+                    <div class="col">
+                      <h4 class="card-header-title d-flex align-items-center">
+                        <span>Instructors</span>
+                        <span class="badge badge-pill badge-soft-secondary ml-2">1</span>
+                      </h4>
+                    </div>
+                    <div class="col-auto">
+                      <button class="btn btn-sm btn-white" data-toggle="modal" data-target="#modalInvite">Invite</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body p-0">
+                  <div class="row align-items-center px-4 py-3">
+                    <div class="col-auto">
+    
+                      <a href="#" class="avatar avatar-xs">
+                        <img src="Course%20Overview%20-%20CPSC1234%20Software%20Security%20-%20Sectry_files/avatar-2.jpg" alt="..." class="avatar-img rounded-circle">
+                      </a>
+    
+                    </div>
+                    <div class="col ml-n2">
+                      <p class="card-text">Ab Hadley</p>
+                    </div>
+                    <div class="col-auto">
+    
+                      <div class="dropdown">
+                        <a href="#!" class="dropdown-ellipses dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" data-expanded="false">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-vertical"><circle cx="12" cy="12" r="1"></circle><circle cx="12" cy="5" r="1"></circle><circle cx="12" cy="19" r="1"></circle></svg>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right">
+                          <a href="#!" class="dropdown-item text-danger">
+                            Remove
+                          </a>
+                        </div>
+                      </div>
+    
+                    </div>
+                  </div>
+                  <hr class="m-0">
+                  <div class="row align-items-center px-4 py-3">
+                    <div class="col-auto">
+    
+                      <a href="#" class="avatar avatar-xs">
+                        <img src="Course%20Overview%20-%20CPSC1234%20Software%20Security%20-%20Sectry_files/avatar-1.jpg" alt="..." class="avatar-img rounded-circle">
+                      </a>
+    
+                    </div>
+                    <div class="col ml-n2">
+                      <p class="card-text">Dianna Smiley</p>
+                    </div>
+                    <div class="col-auto">
+                      <span class="badge badge-soft-secondary mt-n1">
+                        Invited
+                      </span>
+                    </div>
+                    <div class="col-auto">
+    
+                      <div class="dropdown">
+                        <a href="#!" class="dropdown-ellipses dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" data-expanded="false">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-vertical"><circle cx="12" cy="12" r="1"></circle><circle cx="12" cy="5" r="1"></circle><circle cx="12" cy="19" r="1"></circle></svg>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right">
+                          <a href="#!" class="dropdown-item">
+                            Resend invitation
+                          </a>
+                          <a href="#!" class="dropdown-item text-danger">
+                            Remove
+                          </a>
+                        </div>
+                      </div>
+    
+                    </div>
+                  </div>
+                </div>
+              </div><!-- / .card -->
+    
+              <div class="card">
+                <div class="card-header">
+                  <div class="row align-items-center">
+                    <div class="col">
+                      <h4 class="card-header-title d-flex align-items-center">
+                        <span>Students</span>
+                        <span class="badge badge-pill badge-soft-secondary ml-2">15</span>
+                      </h4>
+                    </div>
+                    <div class="col-auto">
+                      <button class="btn btn-sm btn-white" data-toggle="modal" data-target="#modalInvite">Invite</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body p-0">
+                  <div class="row align-items-center px-4 py-3">
+                    <div class="col-auto">
+    
+                      <a href="#!" class="avatar avatar-xs">
+                        <img src="Course%20Overview%20-%20CPSC1234%20Software%20Security%20-%20Sectry_files/avatar-2.jpg" alt="..." class="avatar-img rounded-circle">
+                      </a>
+    
+                    </div>
+                    <div class="col ml-n2">
+                      <p class="card-text">Ab Hadley</p>
+                    </div>
+                    <div class="col-auto">
+    
+                      <div class="dropdown">
+                        <a href="#!" class="dropdown-ellipses dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" data-expanded="false">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-vertical"><circle cx="12" cy="12" r="1"></circle><circle cx="12" cy="5" r="1"></circle><circle cx="12" cy="19" r="1"></circle></svg>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right">
+                          <a href="#!" class="dropdown-item text-danger">
+                            Remove
+                          </a>
+                        </div>
+                      </div>
+    
+                    </div>
+                  </div>
+                  <hr class="m-0">
+                  <div class="row align-items-center px-4 py-3">
+                    <div class="col-auto">
+    
+                      <a href="#" class="avatar avatar-xs">
+                        <img src="Course%20Overview%20-%20CPSC1234%20Software%20Security%20-%20Sectry_files/avatar-1.jpg" alt="..." class="avatar-img rounded-circle">
+                      </a>
+    
+                    </div>
+                    <div class="col ml-n2">
+                      <p class="card-text">Dianna Smiley</p>
+                    </div>
+                    <div class="col-auto">
+    
+                      <div class="dropdown">
+                        <a href="#!" class="dropdown-ellipses dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" data-expanded="false">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-vertical"><circle cx="12" cy="12" r="1"></circle><circle cx="12" cy="5" r="1"></circle><circle cx="12" cy="19" r="1"></circle></svg>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right">
+                          <a href="#!" class="dropdown-item text-danger">
+                            Remove
+                          </a>
+                        </div>
+                      </div>
+    
+                    </div>
+                  </div>
+                  <hr class="m-0">
+                  <div class="row align-items-center px-4 py-3">
+                    <div class="col-auto">
+    
+                      <a href="#" class="avatar avatar-xs">
+                        <img src="Course%20Overview%20-%20CPSC1234%20Software%20Security%20-%20Sectry_files/avatar-3.jpg" alt="..." class="avatar-img rounded-circle">
+                      </a>
+    
+                    </div>
+                    <div class="col ml-n2">
+                      <p class="card-text">Adolfo Hess</p>
+                    </div>
+                    <div class="col-auto">
+    
+                      <div class="dropdown">
+                        <a href="#!" class="dropdown-ellipses dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" data-expanded="false">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-vertical"><circle cx="12" cy="12" r="1"></circle><circle cx="12" cy="5" r="1"></circle><circle cx="12" cy="19" r="1"></circle></svg>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right">
+                          <a href="#!" class="dropdown-item text-danger">
+                            Remove
+                          </a>
+                        </div>
+                      </div>
+    
+                    </div>
+                  </div>
+                  <hr class="m-0">
+                  <div class="row align-items-center px-4 py-3">
+                    <div class="col-auto">
+    
+                      <a href="#" class="avatar avatar-xs">
+                        <img src="Course%20Overview%20-%20CPSC1234%20Software%20Security%20-%20Sectry_files/avatar-4.jpg" alt="..." class="avatar-img rounded-circle">
+                      </a>
+    
+                    </div>
+                    <div class="col ml-n2">
+                      <p class="card-text">
+                        Miyah Myles
+                      </p>
+                    </div>
+                    <div class="col-auto">
+                      <span class="badge badge-soft-secondary mt-n1">
+                        Invited
+                      </span>
+                    </div>
+                    <div class="col-auto">
+                      <div class="dropdown">
+                        <a href="#!" class="dropdown-ellipses dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" data-expanded="false">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-vertical"><circle cx="12" cy="12" r="1"></circle><circle cx="12" cy="5" r="1"></circle><circle cx="12" cy="19" r="1"></circle></svg>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right">
+                          <a href="#!" class="dropdown-item">
+                            Resend invitation
+                          </a>
+                          <a href="#!" class="dropdown-item text-danger">
+                            Remove
+                          </a>
+                        </div>
+                      </div>
+    
+                    </div>
+                  </div>
+                </div>
+              </div><!-- / .card -->
+    
+              <div class="card">
+                <div class="card-header">
+                  <div class="row align-items-center">
+                    <div class="col">
+                      <h4 class="card-header-title d-flex align-items-center">
+                        <span>Teams</span>
+                        <span class="badge badge-pill badge-soft-secondary ml-2">3</span>
+                      </h4>
+                    </div>
+                    <div class="col-auto">
+                      <button class="btn btn-sm btn-white" data-toggle="modal" data-target="#modalAddTeam">Add</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body p-0">
+                  <div class="row align-items-center px-4 py-3">
+                    <div class="col">
+                      <p class="card-text">Team Red</p>
+                    </div>
+                    <div class="col-auto">
+                      <div class="avatar-group d-none d-md-inline-flex">
+                        <a href="#!" class="avatar avatar-xs" data-toggle="tooltip" data-placement="top" title="" data-original-title="Ab Hadley">
+                          <img src="Course%20Overview%20-%20CPSC1234%20Software%20Security%20-%20Sectry_files/avatar-2.jpg" class="avatar-img rounded-circle" alt="...">
+                        </a>
+                        <a href="#!" class="avatar avatar-xs" data-toggle="tooltip" data-placement="top" title="" data-original-title="Adolfo Hess">
+                          <img src="Course%20Overview%20-%20CPSC1234%20Software%20Security%20-%20Sectry_files/avatar-3.jpg" class="avatar-img rounded-circle" alt="...">
+                        </a>
+                        <a href="#!" class="avatar avatar-xs" data-toggle="tooltip" data-placement="top" title="" data-original-title="Miyah Myles">
+                          <img src="Course%20Overview%20-%20CPSC1234%20Software%20Security%20-%20Sectry_files/avatar-4.jpg" class="avatar-img rounded-circle" alt="...">
+                        </a>
+                        <div class="avatar avatar-xs">
+                          <span class="avatar-title rounded-circle">+99</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-auto">
+    
+                      <div class="dropdown">
+                        <a href="#!" class="dropdown-ellipses dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" data-expanded="false">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-vertical"><circle cx="12" cy="12" r="1"></circle><circle cx="12" cy="5" r="1"></circle><circle cx="12" cy="19" r="1"></circle></svg>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right">
+                          <a href="#!" class="dropdown-item" data-toggle="modal" data-target="#modalAddTeam">
+                            Edit
+                          </a>
+                          <a href="#!" class="dropdown-item text-danger">
+                            Remove
+                          </a>
+                        </div>
+                      </div>
+    
+                    </div>
+                  </div>
+                  <hr class="m-0">
+                  <div class="row align-items-center px-4 py-3">
+                    <div class="col">
+                      <p class="card-text">Team Blue</p>
+                    </div>
+                    <div class="col-auto">
+                      <div class="avatar-group d-none d-md-inline-flex">
+                        <a href="#!" class="avatar avatar-xs" data-toggle="tooltip" data-placement="top" title="" data-original-title="Ab Hadley">
+                          <img src="Course%20Overview%20-%20CPSC1234%20Software%20Security%20-%20Sectry_files/avatar-2.jpg" class="avatar-img rounded-circle" alt="...">
+                        </a>
+                        <a href="#!" class="avatar avatar-xs" data-toggle="tooltip" data-placement="top" title="" data-original-title="Adolfo Hess">
+                          <img src="Course%20Overview%20-%20CPSC1234%20Software%20Security%20-%20Sectry_files/avatar-3.jpg" class="avatar-img rounded-circle" alt="...">
+                        </a>
+                        <a href="#!" class="avatar avatar-xs" data-toggle="tooltip" data-placement="top" title="" data-original-title="Miyah Myles">
+                          <img src="Course%20Overview%20-%20CPSC1234%20Software%20Security%20-%20Sectry_files/avatar-4.jpg" class="avatar-img rounded-circle" alt="...">
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-auto">
+    
+                      <div class="dropdown">
+                        <a href="#!" class="dropdown-ellipses dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" data-expanded="false">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-vertical"><circle cx="12" cy="12" r="1"></circle><circle cx="12" cy="5" r="1"></circle><circle cx="12" cy="19" r="1"></circle></svg>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right">
+                          <a href="#!" class="dropdown-item" data-toggle="modal" data-target="#modalAddTeam">
+                            Edit
+                          </a>
+                          <a href="#!" class="dropdown-item text-danger">
+                            Remove
+                          </a>
+                        </div>
+                      </div>
+    
+                    </div>
+                  </div>
+                  <hr class="m-0">
+                  <div class="row align-items-center px-4 py-3">
+                    <div class="col">
+                      <p class="card-text">Team Green</p>
+                    </div>
+                    <div class="col-auto">
+                      <div class="avatar-group d-none d-md-inline-flex">
+                        <a href="#!" class="avatar avatar-xs" data-toggle="tooltip" data-placement="top" title="" data-original-title="Ab Hadley">
+                          <img src="Course%20Overview%20-%20CPSC1234%20Software%20Security%20-%20Sectry_files/avatar-2.jpg" class="avatar-img rounded-circle" alt="...">
+                        </a>
+                        <a href="#!" class="avatar avatar-xs" data-toggle="tooltip" data-placement="top" title="" data-original-title="Adolfo Hess">
+                          <img src="Course%20Overview%20-%20CPSC1234%20Software%20Security%20-%20Sectry_files/avatar-3.jpg" class="avatar-img rounded-circle" alt="...">
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-auto">
+    
+                      <div class="dropdown">
+                        <a href="#!" class="dropdown-ellipses dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" data-expanded="false">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-vertical"><circle cx="12" cy="12" r="1"></circle><circle cx="12" cy="5" r="1"></circle><circle cx="12" cy="19" r="1"></circle></svg>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right">
+                          <a href="#!" class="dropdown-item" data-toggle="modal" data-target="#modalAddTeam">
+                            Edit
+                          </a>
+                          <a href="#!" class="dropdown-item text-danger">
+                            Remove
+                          </a>
+                        </div>
+                      </div>
+    
+                    </div>
+                  </div>
+                </div>
+              </div><!-- / .card -->
+    
+            </div><!-- / .col -->
+          </div> <!-- / .row -->
+        </div>
+    
+      </div> <!-- / .main-content -->
+    
+      <!-- FOOTER
+        ================================================== -->
+      <footer id="footer" class="py-3 py-md-5">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-12 col-md-4 text-center text-md-left order-1">
+              <h2 class="footer-brand text-primary mb-2">
+                <a href="https://sectry.nexuslab.dev/index.html">Sectry</a>
+              </h2>
+              <p class="text-muted">A slogan for the brand</p>
+            </div>
+            <div class="col-12 col-md-5 ml-auto text-center text-md-right order-3 order-md-2">
+              <ul class="list-unstyled list-inline list-links">
+                <li class="list-inline-item mr-4">
+                  <a href="https://sectry.nexuslab.dev/help.html">Help</a>
+                </li>
+                <li class="list-inline-item mr-4">
+                  <a href="https://sectry.nexuslab.dev/error.html">Terms</a>
+                </li>
+                <li class="list-inline-item mr-4">
+                  <a href="https://sectry.nexuslab.dev/error.html">Contact</a>
+                </li>
+                <li class="list-inline-item mr-2">
+                  <a href="https://sectry.nexuslab.dev/error.html">About</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-12 col-md-auto text-center text-md-right order-2 order-md-3">
+              <ul class="list-unstyled list-inline list-social">
+                <li class="list-inline-item mr-3">
+                  <a href="https://sectry.nexuslab.dev/error.html" class="icon" title="Facebook">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                  </a>
+                </li>
+                <li class="list-inline-item mr-3">
+                  <a href="https://sectry.nexuslab.dev/error.html" class="icon" title="Twitter">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-twitter"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://sectry.nexuslab.dev/error.html" class="icon" title="GitHub">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+    
+      <div class="modal fade" id="modalInvite" tabindex="-1" role="dialog" aria-modal="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-card card">
+              <div class="card-header">
+                <div class="row align-items-center">
+                  <div class="col">
+    
+                    <!-- Title -->
+                    <h4 class="card-header-title">
+                      Invite member
+                    </h4>
+    
+                  </div>
+                  <div class="col-auto">
+    
+                    <!-- Close -->
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">×</span>
+                    </button>
+    
+                  </div>
+                </div> <!-- / .row -->
+              </div>
+              <div class="card-body">
+    
+                <form>
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                  </div>
+                  <div class="form-group">
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                      <label class="form-check-label" for="inlineRadio1">Instructor</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" checked="checked">
+                      <label class="form-check-label" for="inlineRadio2">Student</label>
+                    </div>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Invite</button>
+                </form>
+    
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <div class="modal fade" id="modalAddTeam" tabindex="-1" role="dialog" aria-modal="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-card card long">
+              <div class="card-header">
+                <div class="row align-items-center">
+                  <div class="col">
+    
+                    <!-- Title -->
+                    <h4 class="card-header-title">
+                      Add team
+                    </h4>
+    
+                  </div>
+                  <div class="col-auto">
+    
+                    <!-- Close -->
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">×</span>
+                    </button>
+    
+                  </div>
+                </div> <!-- / .row -->
+              </div>
+              <div class="card-body">
+    
+                <form>
+                  <div class="form-group">
+                    <label for="teamName">Team name</label>
+                    <input type="text" class="form-control" id="teamName" aria-describedby="emailHelp" placeholder="Enter team name">
+                  </div>
+                  <div class="form-group">
+                    <label for="teamDescription">
+                      Description
+                    </label>
+                    <textarea class="form-control" data-toggle="autosize" rows="1" id="teamDescription" placeholder="Enter team description" style="overflow: hidden; overflow-wrap: break-word; resize: none;"></textarea>
+                  </div>
+                  <div class="form-group">
+                    <label>Members</label>
+                    <select class="form-control select2-hidden-accessible" data-toggle="select" data-options="{&quot;minimum-results-for-search&quot;: -1}" multiple="multiple" data-select2-id="1" tabindex="-1" aria-hidden="true">
+                      <option data-avatar-src="assets/img/avatars/profiles/avatar-1.jpg">
+                        Dianna Smiley
+                      </option>
+                      <option data-avatar-src="assets/img/avatars/profiles/avatar-2.jpg">
+                        Ab Hadley
+                      </option>
+                      <option data-avatar-src="assets/img/avatars/profiles/avatar-3.jpg">
+                        Adolfo Hess
+                      </option>
+                      <option data-avatar-src="assets/img/avatars/profiles/avatar-4.jpg">
+                        Daniela Dewitt
+                      </option>
+                    </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="2" style="width: auto;"><span class="selection"><span class="select2-selection select2-selection--multiple" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="-1" aria-disabled="false"><ul class="select2-selection__rendered"><li class="select2-search select2-search--inline"><input class="select2-search__field" type="search" tabindex="0" autocomplete="off" autocorrect="off" autocapitalize="none" spellcheck="false" role="searchbox" aria-autocomplete="list" placeholder="" style="width: 0.75em;"></li></ul></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Create</button>
+                </form>
+    
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <!-- JAVASCRIPT
+        ================================================== -->
+      <!-- Libs JS -->
+      <script src="Course%20Overview%20-%20CPSC1234%20Software%20Security%20-%20Sectry_files/jquery.js"></script>
+      <script src="Course%20Overview%20-%20CPSC1234%20Software%20Security%20-%20Sectry_files/bootstrap.js"></script>
+      <script src="Course%20Overview%20-%20CPSC1234%20Software%20Security%20-%20Sectry_files/draggable.js"></script>
+      <script src="Course%20Overview%20-%20CPSC1234%20Software%20Security%20-%20Sectry_files/autosize.js"></script>
+      <script src="Course%20Overview%20-%20CPSC1234%20Software%20Security%20-%20Sectry_files/Chart.js"></script>
+      <script src="Course%20Overview%20-%20CPSC1234%20Software%20Security%20-%20Sectry_files/dropzone.js"></script>
+      <script src="Course%20Overview%20-%20CPSC1234%20Software%20Security%20-%20Sectry_files/flatpickr.js"></script>
+      <script src="Course%20Overview%20-%20CPSC1234%20Software%20Security%20-%20Sectry_files/highlight.js"></script>
+      <script src="Course%20Overview%20-%20CPSC1234%20Software%20Security%20-%20Sectry_files/jquery_002.js"></script>
+      <script src="Course%20Overview%20-%20CPSC1234%20Software%20Security%20-%20Sectry_files/list.js"></script>
+      <script src="Course%20Overview%20-%20CPSC1234%20Software%20Security%20-%20Sectry_files/quill.js"></script>
+      <script src="Course%20Overview%20-%20CPSC1234%20Software%20Security%20-%20Sectry_files/select2.js"></script>
+      <script src="Course%20Overview%20-%20CPSC1234%20Software%20Security%20-%20Sectry_files/feather.js"></script>
+      <script src="Course%20Overview%20-%20CPSC1234%20Software%20Security%20-%20Sectry_files/timesheet.js"></script>
+      <script src="Course%20Overview%20-%20CPSC1234%20Software%20Security%20-%20Sectry_files/Chart_002.js"></script>
+    
+      <!-- Map -->
+      <script src="Course%20Overview%20-%20CPSC1234%20Software%20Security%20-%20Sectry_files/mapbox-gl.js"></script>
+    
+      <!-- Theme JS -->
+      <script src="Course%20Overview%20-%20CPSC1234%20Software%20Security%20-%20Sectry_files/theme.js"></script>
+    
+      <script>
+          feather.replace()
+      </script>
+    
+    
+    
+    <div id="draggable-live-region" aria-relevant="additions" aria-atomic="true" aria-live="assertive" role="log" style="position: fixed; width: 1px; height: 1px; top: -1px; overflow: hidden;"></div></body></html>
+  </body>
+</html>
